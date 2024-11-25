@@ -6,7 +6,7 @@ import openai
 import os
 
 # Set up OpenAI API Key
-openai.api_key = "your-openai-api-key"
+openai.api_key = "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"
 
 # Initialize Discord Bot
 intents = discord.Intents.default()
@@ -40,4 +40,4 @@ async def chat(ctx, *, message: str):
         print(f"Error: {e}")
 
 # Run the bot
-bot.run("your-discord-bot-token")
+bot.run("MTMxMDY1MDUwNDA3ODE2NDA2OA.GcgsIh.uiR0e5eMDP13Wc96JmlORFBBI_AWUUL9Oh5Njw")
