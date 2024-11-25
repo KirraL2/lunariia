@@ -6,7 +6,13 @@ import openai
 import os
 
 # Set up OpenAI API Key
-openai.api_key = "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"
+from dotenv import load_dotenv
+load_dotenv()
+
+openai.api_key = os.getenv("OPENAI_API_KEY")
+
+if not openai.api_key:
+    raise ValueError("OpenAI API key not found. Set it as an environment variable.")
 
 # Initialize Discord Bot
 intents = discord.Intents.default()
